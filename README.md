@@ -1,9 +1,29 @@
-# CIL_chatbot
+# YouTube Chatbot
 
-# first we have to define the features for the chatbot 
-1. finding the top 5 videos for any query
-2. the bot can summerize the any video content using LLM
+## Description
+This CLI-powered chatbot allows users to find YouTube videos, fetch transcripts, and summarize the content using a Transformer model for summarization.
 
-# I have make requirement file to install all the prerequisite for this project 
+## Setup
+1. Clone the repository:
+    ```bash
+    git clone 
+    cd youtube_chatbot
+    ```
 
-# you have to use you own Youtube API 
+2. Create a virtual environment and activate it:
+    ```bash
+    python -m venv youtubebot
+    source youtubebot/bin/activate  # On Windows use `youtubebot\Scripts\activate`
+    ```
+
+3. Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. Update the API keys in `youtube_api.py`.
+
+## Usage
+Run the main application:
+```bash
+python main.py <query>
